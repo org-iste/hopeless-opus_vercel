@@ -1,5 +1,5 @@
 import React from "react";
-import Cyber from "../assets/cyber.png";
+import Cyber from "../assets/Cyber.png";
 
 function Contact() {
   return (
