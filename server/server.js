@@ -20,9 +20,9 @@ connectDB();
 app.use(express.json()); // Parse JSON bodies
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 app.use(cors({
-  origin: ['https://hopeless-opus-vercel.vercel.app/', 'http://localhost:5173'],
+  origin: ['https://hopeless-opus-vercel.vercel.app', 'http://localhost:5173'],
   methods: ['GET', 'POST', 'PUT', 'DELETE'],
-  credentials: true
+  credentials: true,
 }))
 
 // Routes
