@@ -16,7 +16,7 @@ export default defineConfig({
     proxy: {
       // forward API calls to backend dev server
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'https://hopeless-opus-vercel.onrender.com',
         changeOrigin: true,
         secure: false,
       },
