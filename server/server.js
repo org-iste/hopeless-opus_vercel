@@ -19,7 +19,11 @@ connectDB();
 // Middleware
 app.use(express.json()); // Parse JSON bodies
 app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
-app.use(cors())
+app.use(cors({
+  origin: ['https://hopeless-opus-git-main-org-istes-projects.vercel.app/', 'http://localhost:5173'],
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
+}))
 
 // Routes
 app.use("/api/story", storyRoutes);
